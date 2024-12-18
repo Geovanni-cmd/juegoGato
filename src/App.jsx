@@ -9,6 +9,7 @@ function App() {
 
   return (
     <>
+      <CajaP/>
       <div className='Menu box'>
         <div className='logo'>
 
