@@ -1,5 +1,6 @@
 
 const CajaPrincipal = () => {
+    const [show, setShow] = useState(true);
     return (
         <div>
             <div className="turno">
@@ -11,25 +12,31 @@ const CajaPrincipal = () => {
                 </div>
                 <div className="Turno de -">  Turno de no se quien</div>
             </div>
-            <table>
+            <br />
+            <table className="table-fixed border-separate border border-slate-500 ...">
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
+                        <td className="border border-slate-600 ...">1</td>
+                        <td className="border border-slate-600 ...">asdasdas</td>
+                        <td className="border border-slate-600 ...">3</td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
+                        <td className="border border-slate-600 ...">4</td>
+                        <td className="border border-slate-600 ...">5</td>
+                        <td className="border border-slate-600 ...">asdas</td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
+                        <td className="border border-slate-600 ...">asdasdhksjahdkajshdkjashdkjahs</td>
+                        <td className="border border-slate-600 ...">8</td>
+                        <td className="border border-slate-600 ...">9</td>
                     </tr>
                 </tbody>
             </table>
+
+            
+
+
+            <br />
             <div className="reinicio"> 
                 <button>Reiniciar partida</button>
             </div>
