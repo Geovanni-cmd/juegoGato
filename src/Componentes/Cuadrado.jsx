@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-const Cuadrado = () => {
+const Cuadrado = ({value}) => {
     const [valor, setValor] = useState(null)
 
     function handleClick(){
