@@ -1,13 +1,18 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
-const Cuadrado = ({value}) => {
-    const [valor, setValor] = useState(null)
+const Cuadrado = ({ value, cuadradoClick }) => {
+    /*const [valor, setValor] = useState(null)
 
     function handleClick(){
         setValor('X')
-    }
+    }*/
 
-    return ( 
+    return (
+        <button className='cuadrado' onClick={cuadradoClick}>{value}</button>
+    );
+
+
+    /*( 
         <>
             <button 
                 className="cuadrado" 
@@ -16,7 +21,7 @@ const Cuadrado = ({value}) => {
                  {valor} 
             </button>
         </>
-     );
+     );}*/
 }
- 
+
 export default Cuadrado;

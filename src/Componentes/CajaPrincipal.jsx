@@ -22,4 +22,5 @@ const CajaPrincipal = () => {
     );
 }
 
+
 export default CajaPrincipal;
