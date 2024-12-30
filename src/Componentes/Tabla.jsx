@@ -3,12 +3,23 @@ import Cuadrado from "./Cuadrado";
 
 
 const Tabla = () => {
+    const [xEsSiguiente, setEsSiguiente] = useState(true);
     const [cuadros, setCuadros] = useState(Array(9).fill(null));
+
     
+
     function handleClick(i){
+        if(cuadros[i]){
+            return;
+        }
         const siguienteCuadrado =  cuadros.slice();
-        siguienteCuadrado[i] = "X"
+        if ( xEsSiguiente ) {
+            siguienteCuadrado[i] = "X"
+        } else {
+            siguienteCuadrado[i] = "O"
+        }
         setCuadros(siguienteCuadrado);
+        setEsSiguiente(!xEsSiguiente);
     }
 
     return (
