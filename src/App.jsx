@@ -10,7 +10,10 @@ function App() {
 
   return (
     <>
-      <Tabla></Tabla>
+      <p className='titulo'>Juego del Gato</p>
+      <div className='tabla'>
+        <Tabla></Tabla>
+      </div>
     </>
   )
 }
