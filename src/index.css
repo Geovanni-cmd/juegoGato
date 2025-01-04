@@ -53,16 +53,26 @@ h1 {
 
 .status{
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .titulo{
   font-size: 50px;
-  margin: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   animation-duration: 1s;
   animation-name: desliz;
+
+}
+
+.reiniciar {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bolder;
+  background-color: rgba(7, 16, 92, 0.87);
+  border: #ffffff transparent;
+  width: 200px;
+  height: 50px;
 
 }
 
@@ -111,4 +121,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/*Quitar Barra de desplazamiento*/
+::-webkit-scrollbar {
+  display: none;
 }

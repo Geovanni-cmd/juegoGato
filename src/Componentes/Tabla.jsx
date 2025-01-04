@@ -31,6 +31,18 @@ const Tabla = () => {
         status = "Siguiente Jugador: " + (xEsSiguiente ? "X" : "O");
     }
 
+    function Reiniciar(){
+        setEsSiguiente(true);
+        for (var i=0; i < cuadros.length; i++) {
+            console.log(cuadros[i]);
+            
+            cuadros[i] = null;
+            
+            console.log("++++++\n" + cuadros[i]);
+        }
+        
+    }
+
     return (
         <>
         <div className="status">{status}</div>
@@ -48,6 +60,9 @@ const Tabla = () => {
                 <Cuadrado value= {cuadros[6] } cuadradoClick={ () => handleClick(6)}/>
                 <Cuadrado value= {cuadros[7] } cuadradoClick={ () => handleClick(7)}/>
                 <Cuadrado value= {cuadros[8] } cuadradoClick={ () => handleClick(8)}/>
+            </div>
+            <div className="reinicio">
+                <button className="reiniciar" onClick={Reiniciar}>  Reiniciar </button>
             </div>
         </>
     );
