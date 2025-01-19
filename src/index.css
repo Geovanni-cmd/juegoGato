@@ -60,7 +60,7 @@ h1 {
   font-size: 50px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-name: desliz;
 
 }

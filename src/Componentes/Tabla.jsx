@@ -32,14 +32,11 @@ const Tabla = () => {
     }
 
     function Reiniciar(){
-        setEsSiguiente(true);
-        for (var i=0; i < cuadros.length; i++) {
-            console.log(cuadros[i]);
-            
+
+        /*for (var i=0; i < cuadros.length; i++) {
             cuadros[i] = null;
-            
-            console.log("++++++\n" + cuadros[i]);
         }
+        setEsSiguiente(true);*/
         
     }
 
@@ -47,7 +44,7 @@ const Tabla = () => {
         <>
         <div className="status">{status}</div>
             <div className="board-row">
-                <Cuadrado value= {cuadros[0] } cuadradoClick={ () => handleClick(0)} />
+                <Cuadrado className="cuadrado1" value= {cuadros[0] } cuadradoClick={ () => handleClick(0)} />
                 <Cuadrado value= {cuadros[1] } cuadradoClick={ () => handleClick(1)}/>
                 <Cuadrado value= {cuadros[2] } cuadradoClick={ () => handleClick(2)}/>
             </div>
@@ -62,7 +59,7 @@ const Tabla = () => {
                 <Cuadrado value= {cuadros[8] } cuadradoClick={ () => handleClick(8)}/>
             </div>
             <div className="reinicio">
-                <button className="reiniciar" onClick={Reiniciar}>  Reiniciar </button>
+                <button className="reiniciar" onClick={() => window.location.reload()}>  Reiniciar </button>
             </div>
         </>
     );
